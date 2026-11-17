@@ -1,6 +1,8 @@
 <div align="center">
 
-# ◒ MêmeSoir
+<img src="extension/icons/icon128.png" width="96" height="96" alt="Logo MêmeSoir">
+
+# MêmeSoir
 
 ### À distance. Au même moment.
 
@@ -15,7 +17,7 @@ avec une invitation privée, un chat et une lecture synchronisée.
 
 ---
 
-> **État du dépôt : documentation initiale.** Le code source et le logo du prototype n’ont pas encore été importés dans ce dépôt. Les instructions ci-dessous décrivent le paquet MêmeSoir v0.1 existant ; elles seront utilisables depuis ce dépôt après l’ajout des fichiers. Le prototype n’est pas encore publié dans le Chrome Web Store.
+> **Version 0.1.1 — prototype à tester.** Sources, serveur, tests et icônes inclus. Le projet n’est pas publié dans le Chrome Web Store.
 
 ## Une soirée, plusieurs canapés
 
@@ -35,6 +37,8 @@ MêmeSoir permet à un hôte de créer un salon sur une vidéo YouTube et d’in
 ## Installation
 
 **Prérequis :** Chrome ou Edge sur ordinateur, Node.js 22 ou plus récent pour le serveur, et les fichiers du prototype.
+
+Télécharger le dépôt via **Code → Download ZIP**, puis extraire complètement l’archive.
 
 ### 1. Démarrer le serveur
 
@@ -89,7 +93,7 @@ Le panneau lit les événements du lecteur YouTube. Le service worker de l’ext
 
 La synchronisation utilise des requêtes HTTP périodiques, avec une compensation approximative du délai réseau. Elle ne garantit pas une synchronisation image par image.
 
-### Organisation prévue des sources
+### Organisation des sources
 
 | Chemin | Rôle |
 | --- | --- |
@@ -112,12 +116,12 @@ La synchronisation utilise des requêtes HTTP périodiques, avec une compensatio
 - Le prototype limite les salons à 20 participants et conserve les 100 derniers messages.
 - Les salons expirent après deux heures sans requête, avec une durée maximale de douze heures.
 - Recharger une page peut nécessiter de rouvrir le panneau.
-- **Bug signalé :** la saisie dans le chat peut déclencher les raccourcis YouTube. Un correctif d’isolation des événements clavier a été proposé, mais sa validation en navigateur reste à effectuer.
-- Le logo a été créé, mais son intégration aux fichiers de ce dépôt reste à faire.
+- **Bug signalé :** la saisie dans le chat peut déclencher les raccourcis YouTube. Un correctif d’isolation des événements clavier est intégré ; sa validation sur une vraie page YouTube reste à effectuer.
+- Le logo est inclus en PNG aux tailles 16, 32, 48 et 128 pixels.
 
 ## Tests et validation
 
-Commande prévue après import des sources :
+Lancer les tests :
 
 ```bash
 npm test
@@ -159,9 +163,9 @@ La publication du code ne constitue pas une autorisation des plateformes. Le pro
 
 ## Feuille de route
 
-- [ ] Importer les sources du prototype et le logo.
+- [x] Importer les sources du prototype et le logo.
 - [ ] Intégrer et valider le correctif des raccourcis clavier dans le chat.
-- [ ] Fournir des icônes adaptées aux tailles de la barre d’outils.
+- [x] Fournir des icônes adaptées aux tailles de la barre d’outils.
 - [ ] Tester le parcours complet dans Chrome et Edge avec deux participants.
 - [ ] Évaluer la migration vers l’API officielle YouTube.
 - [ ] Améliorer les reconnexions et le comportement pendant les publicités.
@@ -188,3 +192,4 @@ Aucune licence de réutilisation n’a encore été choisie. La visibilité publ
 Projet de [Resul Tektas](https://github.com/rtektas)
 
 </div>
+

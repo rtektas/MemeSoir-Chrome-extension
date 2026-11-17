@@ -1,0 +1,8 @@
+<!doctype html><html lang="fr"><meta charset="utf-8"><link rel="stylesheet" href="popup.css"><body>
+<div class="brand"><span>◒</span> MêmeSoir <small>BÊTA · 0.1</small></div>
+<h1>À distance.<br><em>Au même moment.</em></h1><p class="intro">Une vidéo. Vos amis. La même soirée.</p>
+<label for="name">TON PSEUDO</label><input id="name" maxlength="24" placeholder="Comment t’appelle-t-on ?" autocomplete="off">
+<label for="invite">REJOINDRE UNE SOIRÉE</label><textarea id="invite" rows="2" placeholder="Colle le lien d’invitation ici…"></textarea>
+<button id="join">Rejoindre mes amis ↗</button><div class="or">ou organise la tienne</div><button id="create" class="secondary">Créer sur cette vidéo YouTube</button>
+<details><summary>Connexion au serveur</summary><label for="server">ADRESSE DU SERVEUR</label><input id="server" value="http://localhost:8787"><p>En local pour tester. Pour jouer à distance, chacun doit utiliser le même serveur HTTPS.</p></details>
+<p id="status" role="status">YouTube sur ordinateur · Chaque invité installe l’extension.</p><script src="popup.js"></script></body></html>
